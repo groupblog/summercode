@@ -1,23 +1,33 @@
-<div class="jumbotron">
-  <h1>'Allo, 'Allo!</h1>
-  <p class="lead">
-    <img src="images/yeoman.png" alt="I'm Yeoman"><br>
-    Always a pleasure scaffolding your apps.
-  </p>
-  <p><a class="btn btn-lg btn-success" ng-href="#/">Splendid!<span class="glyphicon glyphicon-ok"></span></a></p>
-</div>
+<div class="container">
+    <h2>My todos</h2>
 
-<div class="row marketing">
-  <h4>HTML5 Boilerplate</h4>
-  <p>
-    HTML5 Boilerplate is a professional front-end template for building fast, robust, and adaptable web apps or sites.
-  </p>
+    <!-- Todos input -->
+    <form role="form" ng-submit="addTodo()">
+        <div class="row">
+            <div class="input-group">
+                <input type="text" ng-model="todo" placeholder="What needs to be done?" class="form-control">
+        <span class="input-group-btn">
+          <input type="submit" class="btn btn-primary" value="Add">
+        </span>
+            </div>
+        </div>
+    </form>
 
-  <h4>Angular</h4>
-  <p>
-    AngularJS is a toolset for building the framework most suited to your application development.
-  </p>
+    <!-- Todos list -->
+    <p class="form-group" ng-repeat="todo in todos">
+        <input type="text" ng-model="todo" class="form-control">
+    </p>
 
-  <h4>Karma</h4>
-  <p>Spectacular Test Runner for JavaScript.</p>
+    <table>
+        <tr>
+            <th>Author</th>
+            <th>Name</th>
+        </tr>
+
+        <tr ng-repeat="tool in tools">
+            <td>{{ tool.author }}</td>
+            <td>{{ tool.name }}</td>
+        </tr>
+    </table>
+
 </div>
