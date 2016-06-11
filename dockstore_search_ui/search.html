@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+<body>
+
+<div ng-app="myApp" ng-controller="myCtrl as ctrl"> 
+<input type="text" ng-change="myfunc()" ng-model="key"/>
+<ul>
+	<table >
+	<tr>
+		<th>Name</th>
+		<th>Author</th>
+		<th>Project Links</th>
+		<th>Docker Pull</th>
+	</tr>
+  <tr ng-repeat="x in myData">
+    <td>{{ x.name }}</td>
+    <td>{{x.author}}</td>
+    <td><a href="">GitHub</a> <a href="">Quay.io</a></td>
+    <td>{{x.dockerpull}}</td>
+  </tr>
+</ul>
+
+</div>
+
+<script>
+var app = angular.module('myApp', []);
+app.controller('myCtrl', function($scope, $http) {
+	$scope.key="";
+	$scope.myData={};
+	$scope.myfunc=function(){
+		if($scope.key.length >= 3){
+			$http.get("http://127.0.0.1:5000/search/"+$scope.key).then(function (response) {
+      			$scope.myData = response.data;
+				console.log($scope.myData);
+  			});
+		}
+	};
+});
+</script>
+
+</body>
+</html>
+
