@@ -58,16 +58,23 @@ def limhello(name):
     cur = conn.cursor()
     pattern = u'%' + name + u'%'
     # SELECT json_object('{key1, 6.4, key2, 9, key3, "value"}');
-    cur.execute("SELECT row_to_json(row(name, author, description)) FROM gmod_tools \
-                 WHERE LOWER(author) LIKE LOWER(%s)", (pattern,))
+    cur.execute("SELECT row_to_json(row(name, author, description, globalId)) FROM gmod_tools \
+                 WHERE LOWER(author) LIKE LOWER(%s) OR LOWER(name) LIKE LOWER(%s);", (pattern, pattern))
     authors = cur.fetchall()
+
+    master_version = json.loads(authors[0][0])['f4'] + "/version/latest"
+
+    cur.execute("SELECT image from gmod_tools_versions_table \
+                 WHERE globalId = %s;", (master_version,))
+
+    image_url = cur.fetchall()[0][0]
 
     result_arr = []
     for author_item in authors:
         result_dict = {}
         result_dict["name"] = json.loads(author_item[0])['f1']
         result_dict["author"] = json.loads(author_item[0])['f2']
-        result_dict["description"] = json.loads(author_item[0])['f3']
+        result_dict["image"] = image_url
         result_arr.append(result_dict)
 
     # author_one = json.loads(authors[0][0])['f1']

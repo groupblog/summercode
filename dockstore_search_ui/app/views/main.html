@@ -1,33 +1,28 @@
+
+<div class="input-group">
+  <input type="text"
+         placeholder="Search..."
+         class="search fully-rounded"
+         ng-model="search_query.text"
+         ng-change="change()"
+         id="toolSearch">
+</div>
+
 <div class="container">
-    <h2>My todos</h2>
-
-    <!-- Todos input -->
-    <form role="form" ng-submit="addTodo()">
-        <div class="row">
-            <div class="input-group">
-                <input type="text" ng-model="todo" placeholder="What needs to be done?" class="form-control">
-        <span class="input-group-btn">
-          <input type="submit" class="btn btn-primary" value="Add">
-        </span>
-            </div>
-        </div>
-    </form>
-
-    <!-- Todos list -->
-    <p class="form-group" ng-repeat="todo in todos">
-        <input type="text" ng-model="todo" class="form-control">
-    </p>
-
     <table>
         <tr>
             <th>Author</th>
             <th>Name</th>
+            <th>Project Links</th>
+            <th>Docker Pull</th>
         </tr>
-
         <tr ng-repeat="tool in tools">
             <td>{{ tool.author }}</td>
             <td>{{ tool.name }}</td>
+            <td><a>Github</a> <a>Quay.io</a></td>
+            <td>{{ tool.image }}</td>
         </tr>
     </table>
-
 </div>
+
+<p>{{ search_query.text }}</p>
