@@ -1,8 +1,7 @@
 Fetch Data from
 -----
-## First work
 ### Introduction
-This work allows users to type in the local database information so as to fetch data from dockstore website and store the data into database.
+This work allows users to type in the local database information so as to fetch data from remote website and store the data into database. Then start the serve to realize search.
 
 ### Usage
 #### Configuration
@@ -11,5 +10,8 @@ This work allows users to type in the local database information so as to fetch 
   - `CREATE ROLE <username> LOGIN PASSWORD '<password>'`
   - `CREATE DATABASE <databasename> OWNER <username>`
 
-#### Run locally
+#### Fetch data remotely and store in local database
 `python fetchDataFromDockstore.py -d <databasename> -u <username> -p <password>`
+
+#### start the URL API server, for
+`python server.py`
