@@ -6,7 +6,7 @@
 
 - To build a search sever:
 		
-		$ sudo docker build search-sever .
+		$ sudo docker build -t search-sever .
 
 - To run a search sever:
 		
