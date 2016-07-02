@@ -22,9 +22,10 @@
       </thead>
       <tbody>
         <tr ng-repeat="search in searchs" style="padding:5px 10px; cursor: move;">
-          <td>{{search.name}}</td>
+          <td><a href={{search.globalId}} class="ng-binding">
+          {{search.name}}</a></td>
           <td>{{search.author}}</td>
-          <td><input type="text" size="40" ng-model="search.image"></td>
+          <td><input type="text" size="40" value={{search.image}}></td>
         </tr>
       </tbody>
     </table>

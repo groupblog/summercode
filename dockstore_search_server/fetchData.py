@@ -59,34 +59,36 @@ def get_data(name):
 	pattern="'"+name+"%'"
 	cur.execute("SELECT * FROM ga4gh_api_v1_tools WHERE name like %s;" % pattern)
 	results=cur.fetchall()
-	print len(results)
+	# print len(results)
 	for row in results:
 		entry={}
-		# entry["global-id"]=row[0]
-		# entry["registry-id"]=row[1]
-		# entry["registry"]=row[2]
-		# entry["organization"]=row[3]
-		entry["name"]=row[4]
-		# entry["tooltype"]=row[5]
-		# entry["description"]=row[6]
-		entry["author"]=row[7]
-		# entry["meta-version"]=row[8]
-		versions=[]
-		Gid="'"+row[0]+"'"
-		cur.execute("SELECT * FROM ga4gh_api_v1_tools_versions WHERE name='latest' and toolsGlobalId=%s;" % Gid)
-		resultsV=cur.fetchall()[0]
-		# entryV={}
+		entry["path"]=row[0]
+		# entry["url"]=row[1]
+		# entry["organization"]=row[2]
+		entry["name"]=row[3]
+		# entry["tooltype"]=row[4]
+		# entry["description"]=row[5]
+		entry["author"]=row[6]
+		# entry["metaVersion"]=row[7]
+		# entry["contains"]=row[8]
+		# versions=[]
+		# Gid="'"+row[0]+"'"
+		# cur.execute("SELECT * FROM ga4gh_api_v1_tools_versions WHERE path=%s;" % Gid)
+		# resultsV=cur.fetchall()
 		# for rowV in resultsV:
-			# entryV["name"]=rowV[0]
-			# entryV["global-id"]=rowV[1]
-			# entryV["toolsGlobal-id"]=rowV[2]
-			# entryV["registry-id"]=rowV[3]
-		entry["image"]=resultsV[4]
-			# entryV["descriptor"]=rowV[5]
-			# entryV["dockerfile"]=rowV[6]
-			# entryV["meta-version"]=rowV[7]
-			# versions.append(entryV)
+		# 	entryV={}
+		# 	entryV["name"]=rowV[0]
+		# 	entryV["id"]=rowV[1]
+		# 	entryV["path"]=rowV[2]
+		# 	entryV["url"]=rowV[3]
+		# 	entryV["image"]=rowV[4]
+		# 	entryV["descriptor"]=rowV[5]
+		# 	entryV["dockerfile"]=rowV[6]
+		# 	entryV["meta-version"]=rowV[7]
+		# 	versions.append(entryV)
 		# entry["versions"]=versions
+		entry["gitUrl"]="https://github.com/ga4gh"
+		entry["toolname"]=""
 		ret.append(entry)
 	conn.commit()
 	cur.close()
