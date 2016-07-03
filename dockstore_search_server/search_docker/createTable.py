@@ -10,7 +10,7 @@ output.close()
 html=json.loads(html)
 # print html
 
-conn=psycopg2.connect("dbname=summercode user=yifeiwang")
+conn=psycopg2.connect("dbname=summercode user=yifeiwang password='966278'")
 cur=conn.cursor()
 
 cur.execute("SELECT * FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_NAME = 'ga4gh_api_v1_tools';")

@@ -17,9 +17,9 @@ RUN apt-get update && apt-get install -y \
 RUN pip install Flask
 
 
-COPY fetchDataFromDockstore.py /fetchDataFromDockstore.py
-COPY sever.py /sever.py
+COPY createTable.py /createTable.py
+COPY fetchData.py /fetchData.py
 COPY run.sh /run.sh
 RUN chmod a+x /run.sh
-# EXPOSE 5432
+EXPOSE 5000
 CMD /run.sh

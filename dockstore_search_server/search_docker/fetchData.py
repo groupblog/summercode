@@ -54,7 +54,7 @@ app = Flask(__name__)
 @app.route('/data/')
 @crossdomain(origin='*', methods='*')
 def get_data():
-	conn=psycopg2.connect("dbname=summercode user=yifeiwang")
+	conn=psycopg2.connect("dbname=summercode user=yifeiwang password='966278'")
 	cur=conn.cursor()
 	ret=[]
 	# pattern="'"+name+"%'"
