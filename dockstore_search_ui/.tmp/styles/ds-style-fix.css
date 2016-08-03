@@ -1,0 +1,666 @@
+/**
+ * CSS Style Fixes - Dockstore-Bootstrap Integration
+ */
+/* line 5, ../../app/styles/ds-style-fix.scss */
+.nav > li > a {
+  position: initial;
+  display: initial;
+  padding: initial;
+}
+
+/* line 11, ../../app/styles/ds-style-fix.scss */
+span.nav-menu-usericon {
+  display: none;
+}
+
+/* line 13, ../../app/styles/ds-style-fix.scss */
+.header1 div.splash {
+  height: 300px;
+}
+
+/* line 17, ../../app/styles/ds-style-fix.scss */
+div.view-content {
+  min-height: 500px;
+}
+
+/* line 21, ../../app/styles/ds-style-fix.scss */
+div.ds-page-mh {
+  min-height: 435px;
+}
+
+/* line 25, ../../app/styles/ds-style-fix.scss */
+div.ds-login-panel {
+  margin-top: 100px;
+  border-color: #21335b;
+}
+/* line 28, ../../app/styles/ds-style-fix.scss */
+div.ds-login-panel .panel-heading {
+  border-color: #21335b;
+  background-color: #21335b;
+}
+
+/* line 35, ../../app/styles/ds-style-fix.scss */
+table.containers-grid th:nth-child(1) {
+  width: 25%;
+}
+/* line 38, ../../app/styles/ds-style-fix.scss */
+table.containers-grid th:nth-child(2) {
+  width: 17.5%;
+}
+/* line 41, ../../app/styles/ds-style-fix.scss */
+table.containers-grid th:nth-child(3) {
+  width: 20%;
+}
+/* line 44, ../../app/styles/ds-style-fix.scss */
+table.containers-grid th:nth-child(4) {
+  width: 37.5%;
+}
+
+/* line 50, ../../app/styles/ds-style-fix.scss */
+table.tokens-grid th:nth-child(1) {
+  width: 15%;
+}
+/* line 53, ../../app/styles/ds-style-fix.scss */
+table.tokens-grid th:nth-child(2) {
+  width: 20%;
+}
+/* line 56, ../../app/styles/ds-style-fix.scss */
+table.tokens-grid th:nth-child(3) {
+  width: 45%;
+}
+/* line 59, ../../app/styles/ds-style-fix.scss */
+table.tokens-grid th:nth-child(4) {
+  width: 20%;
+}
+
+/* line 64, ../../app/styles/ds-style-fix.scss */
+table.versions-grid {
+  margin-bottom: 10px;
+}
+/* line 65, ../../app/styles/ds-style-fix.scss */
+table.versions-grid th:nth-child(1) {
+  width: 12.5%;
+}
+/* line 68, ../../app/styles/ds-style-fix.scss */
+table.versions-grid th:nth-child(2) {
+  width: 17.5%;
+}
+/* line 71, ../../app/styles/ds-style-fix.scss */
+table.versions-grid th:nth-child(3) {
+  width: 12.5%;
+}
+/* line 74, ../../app/styles/ds-style-fix.scss */
+table.versions-grid th:nth-child(4) {
+  width: 17%;
+}
+/* line 77, ../../app/styles/ds-style-fix.scss */
+table.versions-grid th:nth-child(5) {
+  width: 9%;
+}
+/* line 80, ../../app/styles/ds-style-fix.scss */
+table.versions-grid th:nth-child(6) {
+  width: 8%;
+}
+/* line 83, ../../app/styles/ds-style-fix.scss */
+table.versions-grid th:nth-child(7) {
+  width: 23.5%;
+}
+/* line 86, ../../app/styles/ds-style-fix.scss */
+table.versions-grid div.git-ref {
+  width: 124px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* line 95, ../../app/styles/ds-style-fix.scss */
+.side-block table {
+  margin-bottom: 2em;
+}
+
+/* line 99, ../../app/styles/ds-style-fix.scss */
+.input-group-addon {
+  padding: 5px 10px;
+}
+
+/* line 104, ../../app/styles/ds-style-fix.scss */
+#navigation ul.nav.auth > li {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+/* line 108, ../../app/styles/ds-style-fix.scss */
+#navigation ul.nav.auth > li.ds-nav-search-pr {
+  margin-left: 40px;
+}
+/* line 111, ../../app/styles/ds-style-fix.scss */
+#navigation ul.nav li.ds-nav-search-pr {
+  margin-left: 80px;
+  margin-right: 20px;
+}
+/* line 115, ../../app/styles/ds-style-fix.scss */
+#navigation ul.nav li > a:hover, #navigation ul.nav li > a:focus {
+  background-color: initial;
+}
+/* line 118, ../../app/styles/ds-style-fix.scss */
+#navigation ul.nav li > ul.dropdown-menu {
+  background-color: #487980;
+}
+/* line 120, ../../app/styles/ds-style-fix.scss */
+#navigation ul.nav li > ul.dropdown-menu li {
+  margin: 4px 0;
+  display: list-item;
+}
+/* line 123, ../../app/styles/ds-style-fix.scss */
+#navigation ul.nav li > ul.dropdown-menu li a:hover {
+  background-color: initial;
+  text-decoration: none;
+}
+/* line 126, ../../app/styles/ds-style-fix.scss */
+#navigation ul.nav li > ul.dropdown-menu li a:hover span.item-label {
+  text-decoration: underline;
+}
+
+/* line 134, ../../app/styles/ds-style-fix.scss */
+.label {
+  padding-top: .3em;
+}
+
+/* Bootstrap Tabs */
+/* line 139, ../../app/styles/ds-style-fix.scss */
+div.details-container {
+  margin-bottom: 14px;
+}
+
+/* line 142, ../../app/styles/ds-style-fix.scss */
+div.ds-tabs > div {
+  border: solid 1px #cfd1d7;
+  max-width: 870px;
+}
+
+/* line 147, ../../app/styles/ds-style-fix.scss */
+ul.nav-tabs {
+  background-color: #ffffff;
+}
+/* line 149, ../../app/styles/ds-style-fix.scss */
+ul.nav-tabs li {
+  border-right: solid 1px #cfd1d7;
+  min-width: 150px;
+  padding: 12px 0;
+  text-align: center;
+  line-height: 1;
+}
+/* line 155, ../../app/styles/ds-style-fix.scss */
+ul.nav-tabs li a {
+  color: #487980;
+  font-weight: bold;
+}
+/* line 160, ../../app/styles/ds-style-fix.scss */
+ul.nav-tabs li.active, ul.nav-tabs li:not(active):hover {
+  background-color: #7987aa;
+}
+/* line 162, ../../app/styles/ds-style-fix.scss */
+ul.nav-tabs li.active a, ul.nav-tabs li.active a:hover, ul.nav-tabs li.active a:focus, ul.nav-tabs li:not(active):hover a, ul.nav-tabs li:not(active):hover a:hover, ul.nav-tabs li:not(active):hover a:focus {
+  color: #ffffff;
+  background-color: #7987aa;
+  border: none;
+}
+
+/* line 170, ../../app/styles/ds-style-fix.scss */
+div.tab-content {
+  background-color: #ffffff;
+  padding: 8px;
+  min-height: 320px;
+}
+/* line 174, ../../app/styles/ds-style-fix.scss */
+div.tab-content .btn-primary > a, div.tab-content .btn-warning > a {
+  color: #ffffff;
+}
+/* line 177, ../../app/styles/ds-style-fix.scss */
+div.tab-content pre {
+  margin: 0 0;
+}
+/* line 180, ../../app/styles/ds-style-fix.scss */
+div.tab-content span.glyphicon-edit, div.tab-content span.glyphicon-floppy-save {
+  margin-right: 4px;
+}
+
+/* line 185, ../../app/styles/ds-style-fix.scss */
+div.view-content.ns-containers {
+  margin-top: 10px;
+}
+/* line 187, ../../app/styles/ds-style-fix.scss */
+div.view-content.ns-containers div.alert {
+  margin-bottom: 20px;
+}
+
+/* line 193, ../../app/styles/ds-style-fix.scss */
+.ns-containers-accordion div.panel-group {
+  margin-bottom: 14px;
+}
+/* line 196, ../../app/styles/ds-style-fix.scss */
+.ns-containers-accordion div.panel {
+  border-radius: 0;
+  border-color: #ddd;
+}
+/* line 199, ../../app/styles/ds-style-fix.scss */
+.ns-containers-accordion div.panel div.container-namespace-label-oflw {
+  width: 230px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+/* line 205, ../../app/styles/ds-style-fix.scss */
+.ns-containers-accordion div.panel div.container-label {
+  background-color: #ffffff;
+  color: #487980;
+  padding: 0 10px;
+  clear: both;
+  overflow: hidden;
+}
+/* line 211, ../../app/styles/ds-style-fix.scss */
+.ns-containers-accordion div.panel div.container-label div.container-name-oflw {
+  width: 170px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+/* line 217, ../../app/styles/ds-style-fix.scss */
+.ns-containers-accordion div.panel div.container-label a {
+  color: #487980;
+}
+/* line 221, ../../app/styles/ds-style-fix.scss */
+.ns-containers-accordion div.panel div.container-label:hover, .ns-containers-accordion div.panel div.container-label.selected {
+  background-color: #7987a5;
+  color: #ffffff;
+}
+/* line 224, ../../app/styles/ds-style-fix.scss */
+.ns-containers-accordion div.panel div.container-label:hover a, .ns-containers-accordion div.panel div.container-label.selected a {
+  color: #ffffff;
+}
+/* line 229, ../../app/styles/ds-style-fix.scss */
+.ns-containers-accordion div.panel-heading {
+  border-radius: 0;
+  padding-left: 10px;
+  padding-right: 10px;
+  background-color: #ffffff;
+  color: #487980;
+}
+/* line 235, ../../app/styles/ds-style-fix.scss */
+.ns-containers-accordion div.panel-heading span {
+  font-size: 14px;
+}
+/* line 239, ../../app/styles/ds-style-fix.scss */
+.ns-containers-accordion div.panel-body {
+  padding: 15px 0;
+  font-size: 12px;
+}
+
+/* line 245, ../../app/styles/ds-style-fix.scss */
+.glyphicon-refresh-animate {
+  animation: spin .7s infinite linear;
+  transform-origin: 48% 50%;
+}
+
+@keyframes spin {
+  from {
+    transform: scale(1) rotate(0deg);
+  }
+  to {
+    transform: scale(1) rotate(360deg);
+  }
+}
+/* line 256, ../../app/styles/ds-style-fix.scss */
+span.reg-label {
+  padding-bottom: 0.2em;
+}
+
+/* line 260, ../../app/styles/ds-style-fix.scss */
+div.document img {
+  max-width: 95%;
+  padding: 4px;
+  border: 1px solid #d3d3d3;
+}
+
+/* line 266, ../../app/styles/ds-style-fix.scss */
+div.footer > span.contact {
+  float: left;
+}
+
+/* line 270, ../../app/styles/ds-style-fix.scss */
+div.footer > span.about {
+  float: left;
+  padding-right: 25px;
+}
+
+/* line 275, ../../app/styles/ds-style-fix.scss */
+div.form-error-messages p {
+  color: #ff0000;
+}
+
+/* line 280, ../../app/styles/ds-style-fix.scss */
+div.containers-rsb button a {
+  color: #ffffff;
+}
+
+/* line 285, ../../app/styles/ds-style-fix.scss */
+ul.list-unstyled.container-info {
+  margin-bottom: 0;
+}
+
+/* line 289, ../../app/styles/ds-style-fix.scss */
+div.comments {
+  padding: 0 4px 0 4px;
+}
+
+/* line 293, ../../app/styles/ds-style-fix.scss */
+span.label.container-label {
+  margin-right: 4px;
+  display: inline-block;
+  padding-top: 0.4em;
+}
+/* line 297, ../../app/styles/ds-style-fix.scss */
+span.label.container-label a {
+  color: #ffffff;
+}
+
+/* line 302, ../../app/styles/ds-style-fix.scss */
+div.container-source-repos p {
+  margin: 0;
+}
+
+/* line 306, ../../app/styles/ds-style-fix.scss */
+div.container-sharing {
+  width: 180px;
+  margin: 0 auto;
+}
+/* line 309, ../../app/styles/ds-style-fix.scss */
+div.container-sharing div {
+  line-height: 1em;
+}
+
+/* line 315, ../../app/styles/ds-style-fix.scss */
+form.edit-container input.input-sm {
+  width: 360px;
+}
+
+/* line 321, ../../app/styles/ds-style-fix.scss */
+.btn.btn-primary.ds-btn, .btn.btn-primary.ds-btn a {
+  color: #ffffff;
+}
+
+/* line 326, ../../app/styles/ds-style-fix.scss */
+div.ds-holder {
+  display: table;
+  table-layout: fixed;
+  width: 100%;
+  margin-bottom: 5px;
+}
+
+/* line 333, ../../app/styles/ds-style-fix.scss */
+div.ds-descriptor-selector {
+  display: table-cell;
+}
+
+/* line 337, ../../app/styles/ds-style-fix.scss */
+select.ds-descriptor {
+  width: 120px;
+}
+
+/* line 341, ../../app/styles/ds-style-fix.scss */
+div.ds-version-selector {
+  display: table-cell;
+}
+
+/* line 345, ../../app/styles/ds-style-fix.scss */
+select.ds-version {
+  width: 120px;
+}
+
+/* line 349, ../../app/styles/ds-style-fix.scss */
+div.well.well-sm {
+  margin-bottom: 0;
+}
+
+/* line 353, ../../app/styles/ds-style-fix.scss */
+p.error-output {
+  font-family: 'Courier New', Courier, monospace;
+}
+
+/* line 357, ../../app/styles/ds-style-fix.scss */
+div.alert.alert-dismissable {
+  margin-bottom: 0;
+}
+/* line 359, ../../app/styles/ds-style-fix.scss */
+div.alert.alert-dismissable.push-top {
+  margin-top: 20px;
+}
+
+/* line 365, ../../app/styles/ds-style-fix.scss */
+div.form-group.form-group-sm div.checkbox {
+  position: relative;
+  bottom: 2.5px;
+}
+/* line 369, ../../app/styles/ds-style-fix.scss */
+div.form-group.form-group-sm div.label-value {
+  position: relative;
+  top: 5px;
+}
+
+/* line 375, ../../app/styles/ds-style-fix.scss */
+form.form-horizontal {
+  line-height: 1.428571429;
+}
+
+/* line 379, ../../app/styles/ds-style-fix.scss */
+button.add-container-ns {
+  position: relative;
+  top: 5px;
+  right: 13px;
+}
+/* line 383, ../../app/styles/ds-style-fix.scss */
+button.add-container-ns span.glyphicon {
+  left: 1px;
+}
+
+/* line 388, ../../app/styles/ds-style-fix.scss */
+div.modal-header + div.alert {
+  margin: 6px 8px 0 8px;
+}
+
+/* line 393, ../../app/styles/ds-style-fix.scss */
+div.modal form input:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0px 1000px white inset;
+}
+
+/* line 398, ../../app/styles/ds-style-fix.scss */
+.tooltip-inner {
+  max-width: 450px;
+}
+
+/* line 403, ../../app/styles/ds-style-fix.scss */
+button.contact-button a {
+  color: #ffffff;
+}
+
+/* Media Queries - Lower Resolutions (width < 1200px) */
+@media (max-width: 992px) {
+  /* line 410, ../../app/styles/ds-style-fix.scss */
+  img.site-logo {
+    width: 50px;
+  }
+
+  /* line 411, ../../app/styles/ds-style-fix.scss */
+  span.nav-menu-username {
+    display: none;
+  }
+
+  /* line 412, ../../app/styles/ds-style-fix.scss */
+  span.nav-menu-usericon {
+    display: inline;
+  }
+
+  /* line 415, ../../app/styles/ds-style-fix.scss */
+  .ns-containers-accordion div.panel div.container-label div.container-name-oflw {
+    width: 80%;
+  }
+
+  /* line 420, ../../app/styles/ds-style-fix.scss */
+  .header-lower .row {
+    padding-bottom: 30px;
+  }
+
+  /* line 424, ../../app/styles/ds-style-fix.scss */
+  .header .header1 img#ship, .header .header1 img#truck {
+    bottom: 0;
+    right: 22%;
+  }
+  /* line 428, ../../app/styles/ds-style-fix.scss */
+  .header .header1 img#truck {
+    padding-left: 0;
+    right: 2%;
+  }
+
+  /* line 434, ../../app/styles/ds-style-fix.scss */
+  ul.nav-tabs li {
+    min-width: 110px;
+  }
+
+  /* line 437, ../../app/styles/ds-style-fix.scss */
+  #navigation.row ul.nav li {
+    font-size: 12px;
+  }
+  /* line 440, ../../app/styles/ds-style-fix.scss */
+  #navigation.row ul.nav > li {
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+  /* line 444, ../../app/styles/ds-style-fix.scss */
+  #navigation.row ul.nav > li.ds-nav-search-pr {
+    margin-left: 15px;
+  }
+  /* line 446, ../../app/styles/ds-style-fix.scss */
+  #navigation.row ul.nav > li.ds-nav-search-pr input.search {
+    width: 200px;
+  }
+  /* line 450, ../../app/styles/ds-style-fix.scss */
+  #navigation.row ul.nav.auth > li {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  /* line 454, ../../app/styles/ds-style-fix.scss */
+  #navigation.row ul.nav.auth > li.ds-nav-search-pr {
+    margin-left: 10px;
+  }
+  /* line 456, ../../app/styles/ds-style-fix.scss */
+  #navigation.row ul.nav.auth > li.ds-nav-search-pr input.search {
+    width: 170px;
+  }
+
+  /* line 462, ../../app/styles/ds-style-fix.scss */
+  table.tokens-grid th:nth-child(1) {
+    width: 20%;
+  }
+  /* line 465, ../../app/styles/ds-style-fix.scss */
+  table.tokens-grid th:nth-child(2) {
+    width: 25%;
+  }
+  /* line 468, ../../app/styles/ds-style-fix.scss */
+  table.tokens-grid th:nth-child(3) {
+    width: 40%;
+  }
+  /* line 471, ../../app/styles/ds-style-fix.scss */
+  table.tokens-grid th:nth-child(4) {
+    width: 15%;
+  }
+
+  /* line 475, ../../app/styles/ds-style-fix.scss */
+  div.side-block {
+    display: none;
+  }
+
+  /* line 478, ../../app/styles/ds-style-fix.scss */
+  table td, table th {
+    padding: 6px 18px;
+  }
+
+  /* line 482, ../../app/styles/ds-style-fix.scss */
+  table.versions-grid th:nth-child(1) {
+    width: 20%;
+  }
+  /* line 485, ../../app/styles/ds-style-fix.scss */
+  table.versions-grid th:nth-child(2) {
+    width: 15%;
+  }
+  /* line 488, ../../app/styles/ds-style-fix.scss */
+  table.versions-grid th:nth-child(3) {
+    width: 25%;
+  }
+  /* line 491, ../../app/styles/ds-style-fix.scss */
+  table.versions-grid th:nth-child(4) {
+    width: 50%;
+  }
+
+  /* line 496, ../../app/styles/ds-style-fix.scss */
+  ul.our-sponsors li:nth-child(1) {
+    display: block;
+  }
+  /* line 497, ../../app/styles/ds-style-fix.scss */
+  ul.our-sponsors li:nth-child(n+2) {
+    padding-right: 46px;
+  }
+
+  /* line 501, ../../app/styles/ds-style-fix.scss */
+  div.footer > span.contact > a {
+    display: block;
+  }
+}
+@media (min-width: 992px) and (max-width: 1200px) {
+  /* line 508, ../../app/styles/ds-style-fix.scss */
+  .ns-containers-accordion div.panel div.container-label div.container-name-oflw {
+    width: 138px;
+  }
+
+  /* line 513, ../../app/styles/ds-style-fix.scss */
+  .header-lower div.button {
+    width: 210px;
+  }
+
+  /* line 517, ../../app/styles/ds-style-fix.scss */
+  ul.nav-tabs li {
+    min-width: 130px;
+  }
+
+  /* line 520, ../../app/styles/ds-style-fix.scss */
+  #navigation.row ul.nav > li {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  /* line 524, ../../app/styles/ds-style-fix.scss */
+  #navigation.row ul.nav.auth > li {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  /* line 528, ../../app/styles/ds-style-fix.scss */
+  #navigation.row ul.nav.auth > li.ds-nav-search-pr {
+    margin-left: 20px;
+  }
+
+  /* line 533, ../../app/styles/ds-style-fix.scss */
+  table.containers-grid th:nth-child(1) {
+    width: 25%;
+  }
+  /* line 536, ../../app/styles/ds-style-fix.scss */
+  table.containers-grid th:nth-child(2) {
+    width: 20%;
+  }
+  /* line 539, ../../app/styles/ds-style-fix.scss */
+  table.containers-grid th:nth-child(3) {
+    width: 20%;
+  }
+  /* line 542, ../../app/styles/ds-style-fix.scss */
+  table.containers-grid th:nth-child(4) {
+    width: 35%;
+  }
+}
+
+/*# sourceMappingURL=ds-style-fix.css.map */
