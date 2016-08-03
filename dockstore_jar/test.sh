@@ -19,7 +19,6 @@ fi
 # Check Existence Python
 if type -p python > /dev/null; then
   _python=python
-  echo "find python"
 else
   echo "python was not installed or is not on your PATH."
   exit -100;
@@ -31,14 +30,13 @@ if [[ "$_python" ]]; then
     echo "Dockstore requires Java version 1.8 and above."
     # exit -100;
   else
-    echo "Python's version $version"
+    echo "Python version is $version"
   fi
 fi
 
 #Check Docker
 if type -p docker > /dev/null; then
   _docker=docker
-  echo "find docker"
 else
   echo "docker was not installed or is not on your PATH."
   exit -100;
@@ -51,6 +49,6 @@ if [[ "$_docker" ]]; then
     echo "Dockstore requires docker version 1.1 and above."
     exit -100;
   else
-    echo "The docker version is $docker_version"
+    echo " version is $docker_version"
   fi
 fi
