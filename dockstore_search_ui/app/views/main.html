@@ -1,0 +1,28 @@
+
+<div class="input-group">
+  <input type="text"
+         placeholder="Search..."
+         class="search fully-rounded"
+         ng-model="search_query.text"
+         ng-change="change()"
+         id="toolSearch">
+</div>
+
+<div class="container">
+    <table>
+        <tr>
+            <th>Author</th>
+            <th>Name</th>
+            <th>Project Links</th>
+            <th>Docker Pull</th>
+        </tr>
+        <tr ng-repeat="tool in tools">
+            <td>{{ tool.author }}</td>
+            <td>{{ tool.name }}</td>
+            <td><a>Github</a> <a>Quay.io</a></td>
+            <td>{{ tool.image }}</td>
+        </tr>
+    </table>
+</div>
+
+<p>{{ search_query.text }}</p>
