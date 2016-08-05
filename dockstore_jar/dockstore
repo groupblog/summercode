@@ -240,12 +240,31 @@ else
         exit -100;
     fi
 
+    if [[ "$_docker" ]]; then
+      version=$("$_docker" --version 2>&1 | awk -F' ' '{print $3}')
+      version=${version::${#version}-1}
+      echo $version
+      if [[ "$version" < "1.0" ]]; then
+        echo "Dockstore requires Docker version 1.12 and above."
+        exit -100;
+      fi
+    fi
+
     if type -p cwltool > /dev/null; then
         _cwltool=cwltool
         echo "find cwltool"
     else
         echo "cwltools was not installed or is not on your PATH."
         exit -100;
+    fi
+
+    if [[ "$_cwltool" ]]; then
+      version=$("$_cwltool" --version 2>&1 | awk -F' ' '{print $2}')
+      echo $version
+      if [[ "$version" < "1.0" ]]; then
+        echo "Dockstore requires Cwltools version 1.0 and above."
+        exit -100;
+      fi
     fi
 
     if type -p python > /dev/null; then
