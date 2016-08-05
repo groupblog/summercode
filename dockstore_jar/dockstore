@@ -234,7 +234,7 @@ else
 
     if type -p docker > /dev/null; then
         _docker=docker
-        echo "find docker"
+        echo "find Docker"
     else
         echo "Docker was not installed or is not on your PATH."
         exit -100;
@@ -245,16 +245,16 @@ else
       version=${version::${#version}-1}
       echo $version
       if [[ "$version" < "1.0" ]]; then
-        echo "Dockstore requires Docker version 1.12 and above."
+        echo "Dockstore requires Docker version 1.0 and above."
         exit -100;
       fi
     fi
 
     if type -p cwltool > /dev/null; then
         _cwltool=cwltool
-        echo "find cwltool"
+        echo "find Cwltools"
     else
-        echo "cwltools was not installed or is not on your PATH."
+        echo "Cwltools was not installed or is not on your PATH."
         exit -100;
     fi
 
@@ -269,9 +269,9 @@ else
 
     if type -p python > /dev/null; then
         _python=python
-        echo "find python"
+        echo "find Python"
     else
-        echo "python was not installed or is not on your PATH."
+        echo "Python was not installed or is not on your PATH."
         exit -100;
     fi
 
